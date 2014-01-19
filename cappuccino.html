@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>coffee.</title>
+	<style>
+		html, body {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+			color: #000;
+			font-size: 8pt;
+		}
+
+		.container {
+			margin-top: 10%;
+			margin-left: 10%;
+			font-size: 1px;
+		}
+
+		._coffee-mug {
+			position: fixed;
+			background-color: black;
+		}
+
+		._coffee-mug {
+			background: linear-gradient(107deg, #f2f6f8 10%,#d8e1e7 63%,#b5c6d0 82%,#e0eff9 100%);
+		}
+
+		._coffee-shadow {
+			position: absolute;
+			width: 42em;
+			height: 5em;
+			background: radial-gradient(ellipse at center, #363636 0%, rgba(250, 250, 250, 0.17) 59%), rgba(255, 255, 255, 0.02) 100%;
+			margin-top: 30em;
+			border-radius: 50%;
+		}
+
+		._coffee-mug-handle {
+			position: relative;
+			left: 33em;
+			background-color: red;
+			width: 11em;
+			height: 17em;
+			border-top-right-radius: 61%;
+			border-top-left-radius: 56%;
+			border-bottom-right-radius: 98%;
+			border-bottom-left-radius: 62%;
+			background: radial-gradient(ellipse at left, transparent 47% ,#d8e1e7 50%,#b5c6d0 66%,#e0eff9 100%);
+		}
+
+		._coffee-mug {
+			height: 33em;
+			width: 40em;
+			border-bottom-left-radius: 50%;
+			border-bottom-right-radius: 50%;
+		}
+
+		._coffee-mug-inside {
+			height: 10em;
+			width: 40em;
+			background-color: #dedede;
+			border-radius: 50%;
+			margin-top: -5em;
+			background: radial-gradient(ellipse at 50% 32%, #DA8601 9%,#E7D8C0 45%,#F0CB92 54%, #FFFFFF 74%, #f2f6f8 89%);
+		}
+
+		._coffee-steam,
+		._coffee-steam:before,
+		._coffee-steam:after, {
+			width: 40em;
+			height: 10em;
+			margin-top: -23em;
+			margin-left: auto;
+			margin-right: auto;
+			background: blue;
+			position: fixed;
+			border-top-right-radius: 60%;
+			border-bottom-right-radius: 50%;
+			border-top-left-radius: 60%;
+			border-bottom-left-radius: 50%;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="_coffee-steam"></div>
+		<div class="_coffee-shadow"></div>
+		<div class="_coffee-mug">
+			<div class="_coffee-mug-inside"></div>
+			<div class="_coffee-mug-handle"></div>
+		</div>
+	</div>
+</body>
+</html>
